@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    {{profile.category}}<br>
+    {% for tution_class in tution_class %}
+    {{tution_class.tution_class}}<br>
+    {{tution_class.tutoring_style}}<br>
+    {{tution_class.tutoring_place}}<br>
+    {{tution_class.status}}<br>
+
+    {% endfor %}
+</body>
+</html>

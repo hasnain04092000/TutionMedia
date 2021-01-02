@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{p_form.as_p}}
+        <button type="submit" name="submit_p_form">Update</button>
+    </form>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{t_form.as_p}}
+        <button type="submit" name="submit_t_form">Update</button>
+    </form>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{v_form.as_p}}
+        <button type="submit" name="submit_v_form">Update</button>
+    </form>
+    
+</body>
+</html>
